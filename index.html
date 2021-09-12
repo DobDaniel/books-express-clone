@@ -1,0 +1,2209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="reset.css" />
+
+        <title>Document</title>
+    </head>
+    <body class="main" id="Main">
+        <header class="Header">
+            <a href="" class="HeaderLogo">
+                <svg class="HeaderLogoImage" viewBox="0 0 215 26">
+                    <title>Books Express Logo</title>
+                    <path
+                        d="M0,25L3.88,0.49h6.3q4.58,0,6.59,1.33a4.8,4.8,0,0,1,2,4.32,5.75,5.75,0,0,1-1.3,3.92,7,7,0,0,1-3.91,2.07,5.46,5.46,0,0,1,3,1.9,5.25,5.25,0,0,1,1,3.29,7.63,7.63,0,0,1-.72,3.27,7.11,7.11,0,0,1-2,2.58A7.41,7.41,0,0,1,12,24.59,17.42,17.42,0,0,1,7.64,25H0ZM7.54,19.9L7.89,20l0.47,0a2.18,2.18,0,0,0,1.83-.81,3.71,3.71,0,0,0,.63-2.32,2.39,2.39,0,0,0-.57-1.74,2.31,2.31,0,0,0-1.72-.58H8.33ZM9,10l0.28,0H9.8a2.46,2.46,0,0,0,1.8-.65,2.35,2.35,0,0,0,.66-1.76,1.82,1.82,0,0,0-.53-1.42,2.23,2.23,0,0,0-1.55-.48L10,5.7l-0.22,0Z"
+                        
+                    ></path>
+                    <path
+                        d="M27.16,25.52A6.9,6.9,0,0,1,21.59,23a10.12,10.12,0,0,1-2.11-6.71,25.18,25.18,0,0,1,.88-6.64,17.66,17.66,0,0,1,2.38-5.41,9.91,9.91,0,0,1,3.4-3.16,9.13,9.13,0,0,1,4.41-1,6.92,6.92,0,0,1,5.6,2.48,10.2,10.2,0,0,1,2.07,6.75,25.1,25.1,0,0,1-.87,6.62A18,18,0,0,1,35,21.31a9.57,9.57,0,0,1-3.37,3.15A9.21,9.21,0,0,1,27.16,25.52Zm-0.82-8.67a4.15,4.15,0,0,0,.37,2,1.26,1.26,0,0,0,1.17.63,1.64,1.64,0,0,0,1.25-.57,5.11,5.11,0,0,0,.94-1.83A23,23,0,0,0,31,13.14a30,30,0,0,0,.34-4.4,4.44,4.44,0,0,0-.35-2,1.16,1.16,0,0,0-1.09-.65,1.78,1.78,0,0,0-1.33.56,4.54,4.54,0,0,0-.93,1.81,26,26,0,0,0-.91,4A28.81,28.81,0,0,0,26.34,16.84Z"
+                        
+                    ></path>
+                    <path
+                        d="M46.58,25.52A6.9,6.9,0,0,1,41,23a10.12,10.12,0,0,1-2.11-6.71,25.18,25.18,0,0,1,.88-6.64,17.66,17.66,0,0,1,2.38-5.41,9.91,9.91,0,0,1,3.4-3.16A9.13,9.13,0,0,1,50,0a6.92,6.92,0,0,1,5.6,2.48,10.2,10.2,0,0,1,2.07,6.75,25.1,25.1,0,0,1-.87,6.62,18,18,0,0,1-2.39,5.43A9.57,9.57,0,0,1,51,24.47,9.21,9.21,0,0,1,46.58,25.52Zm-0.82-8.67a4.15,4.15,0,0,0,.37,2,1.26,1.26,0,0,0,1.17.63,1.64,1.64,0,0,0,1.25-.57,5.11,5.11,0,0,0,.94-1.83,23,23,0,0,0,.89-3.94,30,30,0,0,0,.34-4.4,4.44,4.44,0,0,0-.35-2,1.16,1.16,0,0,0-1.09-.65A1.78,1.78,0,0,0,48,6.63,4.54,4.54,0,0,0,47,8.44a26,26,0,0,0-.91,4A28.81,28.81,0,0,0,45.76,16.84Z"
+                      
+                    ></path>
+                    <path
+                        d="M57.46,25L61.34,0.49h6.81L66.54,10.74,71.93,0.49h6.94L72.1,11.82,75.17,25H67.78L66.06,13.87,64.29,25H57.46Z"
+                       
+                    ></path>
+                    <path
+                        d="M76.75,17.48A9.17,9.17,0,0,0,79.14,19a6.27,6.27,0,0,0,2.41.52,2.28,2.28,0,0,0,1.62-.56,2,2,0,0,0,.6-1.54,3.21,3.21,0,0,0-.5-1.67,12.24,12.24,0,0,0-1.94-2.21,12.13,12.13,0,0,1-2.39-3,6.26,6.26,0,0,1-.65-2.86A7.26,7.26,0,0,1,80.5,2.07a8.46,8.46,0,0,1,6-2.07,12.13,12.13,0,0,1,2.93.34,13.62,13.62,0,0,1,2.83,1.07l-1,6a10.16,10.16,0,0,0-2.15-1.18,5.54,5.54,0,0,0-2-.4,1.93,1.93,0,0,0-1.35.45,1.56,1.56,0,0,0-.49,1.22q0,1,1.89,2.92l0.37,0.37A11.77,11.77,0,0,1,90.07,14a7.55,7.55,0,0,1,.6,3.11,8.1,8.1,0,0,1-2.42,6.2,9.28,9.28,0,0,1-6.61,2.27,13,13,0,0,1-3.39-.43A8.54,8.54,0,0,1,75.57,24Z"
+                       
+                    ></path>
+                    <path
+                        d="M99.56,25l3.88-24.54h12.09l-0.94,6h-5.27L108.8,9.56h4.77l-0.89,5.75h-4.77l-0.55,3.38h5.28l-1,6.34H99.56Z"
+                       
+                    ></path>
+                    <path
+                        d="M120,12.61L116.71,0.49h7.06L124.52,7l2.81-6.51h7.09l-7.09,12.12L131,25h-7.22l-1.1-6.47L119.59,25h-7.22Z"
+                     
+                    ></path>
+                    <path
+                        d="M132.18,25l3.88-24.54h5.85q4.9,0,7.07,1.62t2.17,5.25q0,4.59-2.58,7.05t-7.38,2.46l-0.46,0-0.46,0L139,25h-6.82ZM142,5.92l-0.85,5.43,0.28,0h0.37a2.68,2.68,0,0,0,2.18-.87,4.06,4.06,0,0,0,.73-2.64,1.8,1.8,0,0,0-.6-1.47,2.71,2.71,0,0,0-1.76-.5H142Z"
+                    
+                    ></path>
+                    <path
+                        d="M150.58,25l3.88-24.54h5.75q5.42,0,7.47,1.43t2,4.87a8.7,8.7,0,0,1-1.3,4.94,6.14,6.14,0,0,1-3.74,2.56l3,10.74h-7.22l-1.54-9.92L157.4,25h-6.82Zm9-13.6h0.37a3,3,0,0,0,2.39-1,4.25,4.25,0,0,0,.84-2.83,2.06,2.06,0,0,0-.54-1.56,2.35,2.35,0,0,0-1.66-.5l-0.23,0-0.26,0Z"
+                     
+                    ></path>
+                    <path
+                        d="M169,25l3.88-24.54H185l-0.94,6h-5.27l-0.52,3.13H183l-0.89,5.75h-4.77l-0.55,3.38h5.28l-1,6.34H169Z"
+                 
+                    ></path>
+                    <path
+                        d="M183.94,17.48A9.17,9.17,0,0,0,186.34,19a6.27,6.27,0,0,0,2.41.52,2.28,2.28,0,0,0,1.62-.56,2,2,0,0,0,.6-1.54,3.21,3.21,0,0,0-.5-1.67,12.26,12.26,0,0,0-1.94-2.21,12.15,12.15,0,0,1-2.39-3,6.26,6.26,0,0,1-.65-2.86,7.26,7.26,0,0,1,2.22-5.58,8.46,8.46,0,0,1,6-2.07,12.13,12.13,0,0,1,2.93.34,13.62,13.62,0,0,1,2.83,1.07l-1,6a10.16,10.16,0,0,0-2.15-1.18,5.54,5.54,0,0,0-2-.4,1.93,1.93,0,0,0-1.35.45,1.56,1.56,0,0,0-.49,1.22q0,1,1.89,2.92l0.37,0.37A11.77,11.77,0,0,1,197.27,14a7.54,7.54,0,0,1,.6,3.11,8.1,8.1,0,0,1-2.42,6.2,9.28,9.28,0,0,1-6.61,2.27,13,13,0,0,1-3.39-.43A8.54,8.54,0,0,1,182.77,24Z"
+                     
+                    ></path>
+                    <path
+                        d="M199.48,17.48A9.17,9.17,0,0,0,201.87,19a6.27,6.27,0,0,0,2.41.52,2.28,2.28,0,0,0,1.62-.56,2,2,0,0,0,.6-1.54,3.21,3.21,0,0,0-.5-1.67,12.26,12.26,0,0,0-1.94-2.21,12.15,12.15,0,0,1-2.39-3A6.26,6.26,0,0,1,201,7.65a7.26,7.26,0,0,1,2.22-5.58,8.46,8.46,0,0,1,6-2.07,12.13,12.13,0,0,1,2.93.34A13.62,13.62,0,0,1,215,1.41l-1,6a10.16,10.16,0,0,0-2.15-1.18,5.54,5.54,0,0,0-2-.4,1.93,1.93,0,0,0-1.35.45A1.56,1.56,0,0,0,208,7.48q0,1,1.89,2.92l0.37,0.37A11.77,11.77,0,0,1,212.81,14a7.54,7.54,0,0,1,.6,3.11,8.1,8.1,0,0,1-2.42,6.2,9.28,9.28,0,0,1-6.61,2.27,13,13,0,0,1-3.39-.43A8.54,8.54,0,0,1,198.31,24Z"
+                       
+                    ></path>
+                </svg>
+            </a>
+            <form action="" method="GET" class="Search">
+                <fieldset></fieldset>
+                <label for=""></label>
+                <input
+                    type="text"
+                    class="SearchBar"
+                    placeholder="Caută după titlu, autor sau cuvinte cheie"
+                />
+                <button type="submit" class="SearchButton">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        class="SearchIcon"
+                        data-prefix="fas"
+                        data-icon="search"
+                        class="svg-inline--fa fa-search fa-w-16"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                    >
+                        <path
+                            fill="white"
+                            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                        ></path>
+                    </svg>
+                </button>
+            </form>
+            <nav class="Nav">
+                <ul class="NavList">
+                    <a href="" class="NavLink">
+                        <li class="NavListItem">
+                            <svg
+                                version="1.1"
+                                class="NavListItemImage Cart"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 23.3 20.6"
+                                style="enable-background: new 0 0 23.3 20.6"
+                                xml:space="preserve"
+                            >
+                                <title>Cos</title>
+                                <path
+                                    d="M0.8,0c-1,0-1.1,1.4-0.2,1.6L2.4,2c0.9,4.4,1.9,8.9,2.9,13.3c0.1,0.4,0.4,0.6,0.8,0.6H20c1.1,0,1.1-1.6,0-1.6H6.7l-0.4-1.6
+	h14.4c0.4,0,0.7-0.3,0.8-0.6l1.8-7.9c0.1-0.5-0.3-1-0.8-1c-6.1,0-12.1,0-18.2,0l-0.4-2C3.8,0.8,3.5,0.6,3.2,0.5L1,0
+	C0.9,0,0.9,0,0.8,0L0.8,0z M9.4,16.4c-1.2,0-2.1,1-2.1,2.1c0,1.2,1,2.1,2.1,2.1s2.1-1,2.1-2.1C11.5,17.4,10.6,16.4,9.4,16.4z
+	 M16.8,16.4c-1.2,0-2.1,1-2.1,2.1c0,1.2,1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1C18.9,17.4,18,16.4,16.8,16.4z"
+                                />
+                            </svg>
+                            <h3>Coș</h3>
+
+                            <svg
+                                version="1.1"
+                                class="NavListItemImage Dropdown"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 22.8 11.3"
+                                style="enable-background: new 0 0 22.8 11.3"
+                                xml:space="preserve"
+                            >
+                                <title>Dropdown</title>
+                                <g>
+                                    <polygon
+                                        points="3,0 0.2,0 11.7,11.3 22.8,0 20,0 11.7,8.5 	"
+                                    />
+                                </g>
+                            </svg>
+                        </li>
+                    </a>
+                    <a href="" class="NavLink">
+                        <li class="NavListItem">
+                            <svg
+                                version="1.1"
+                                class="NavListItemImage Person"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 75.8 90"
+                                style="enable-background: new 0 0 75.8 90"
+                                xml:space="preserve"
+                            >
+                                <title>Cont</title>
+                                <path
+                                    d="M53.6,52.6C49,55.4,43.6,57,37.9,57s-11.1-1.6-15.7-4.4C8.7,58.8,0,73.1,0,89.2c0,1.1,75.8,1.1,75.8,0
+	C75.8,73,67.1,58.8,53.6,52.6z"
+                                />
+                                <circle cx="37.9" cy="26.5" r="26.5" />
+                            </svg>
+
+                            <h3>Cont</h3>
+                            <svg
+                                version="1.1"
+                                class="NavListItemImage Dropdown"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 22.8 11.3"
+                                style="enable-background: new 0 0 22.8 11.3"
+                                xml:space="preserve"
+                            >
+                                <title>Dropdown</title>
+                                <g>
+                                    <polygon
+                                        points="3,0 0.2,0 11.7,11.3 22.8,0 20,0 11.7,8.5 	"
+                                    />
+                                </g>
+                            </svg>
+                        </li>
+                    </a>
+                    <a href="" class="NavLink">
+                        <li class="NavListItem">
+                            <svg
+                                version="1.1"
+                                class="NavListItemImage Heart"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 100 87.4"
+                                style="enable-background: new 0 0 100 87.4"
+                                xml:space="preserve"
+                            >
+                                <title>Heart</title>
+                                <g>
+                                    <path
+                                        d="M70.6,0C60.3,0,53.8,5,50,9.6C46.2,5,39.7,0,29.4,0C11.8,0,0,16.3,0,31.5c0,22.1,42.5,51.8,47.4,55.1
+		c0.8,0.5,1.7,0.8,2.6,0.8s1.8-0.3,2.6-0.8c4.8-3.3,47.4-33,47.4-55.1C100,16.3,88.2,0,70.6,0z"
+                                    />
+                                </g>
+                            </svg>
+
+                            <h3>Liste</h3>
+                            <svg
+                                version="1.1"
+                                class="NavListItemImage Dropdown"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 22.8 11.3"
+                                style="enable-background: new 0 0 22.8 11.3"
+                                xml:space="preserve"
+                            >
+                                <title>Dropdown</title>
+                                <g>
+                                    <polygon
+                                        points="3,0 0.2,0 11.7,11.3 22.8,0 20,0 11.7,8.5 	"
+                                    />
+                                </g>
+                            </svg>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <nav class="UnderBar">
+            <ul class="UnderBarList">
+                <li class="UnderBarItem">
+                    <a href="" class="DropItem">
+                        <h3>Produse</h3>
+                        <svg
+                            version="1.1"
+                            class="NavListItemImage Dropdown"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 22.8 11.3"
+                            style="enable-background: new 0 0 22.8 11.3"
+                            xml:space="preserve"
+                        >
+                            <title>Dropdown</title>
+                            <g>
+                                <polygon
+                                    points="3,0 0.2,0 11.7,11.3 22.8,0 20,0 11.7,8.5 	"
+                                />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="UnderBarItem">
+                    <a href="">
+                        <h3>Reduceri</h3>
+                    </a>
+                </li>
+                <li class="UnderBarItem">
+                    <a href="">
+                        <h3>Top vânzări</h3>
+                    </a>
+                </li>
+                <li class="UnderBarItem">
+                    <a href="">
+                        <h3>Noutăți</h3>
+                    </a>
+                </li>
+                <li class="UnderBarItem">
+                    <a href="">
+                        <h3>Cadouri</h3>
+                    </a>
+                </li>
+                <li class="UnderBarItem">
+                    <a href="">
+                        <h3>Blog</h3>
+                    </a>
+                </li>
+                <li class="UnderBarItem Separate">
+                    <a href="">
+                        <h3>Abonează-te la newsletter!</h3>
+                    </a>
+                </li>
+                <li class="UnderBarItem Separated">
+                    <a href="" class="IconItem">
+                        <svg
+                            version="1.1"
+                            class="UnderBarIcon"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 496 496"
+                            style="enable-background: new 0 0 496 496"
+                            xml:space="preserve"
+                        >
+                            <title>Info</title>
+                            <path
+                                d="M248,0C111,0,0,111.1,0,248c0,137,111,248,248,248s248-111,248-248C496,111.1,385,0,248,0z M248,110c23.2,0,42,18.8,42,42
+	s-18.8,42-42,42s-42-18.8-42-42S224.8,110,248,110z M304,364c0,6.6-5.4,12-12,12h-88c-6.6,0-12-5.4-12-12v-24c0-6.6,5.4-12,12-12h12
+	v-64h-12c-6.6,0-12-5.4-12-12v-24c0-6.6,5.4-12,12-12h64c6.6,0,12,5.4,12,12v100h12c6.6,0,12,5.4,12,12V364z"
+                            />
+                        </svg>
+
+                        <h3>Contact</h3>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="HeaderSection">
+            <img
+                src="header-primavara-desktop.jpg"
+                alt="primavara"
+                class="SectionImage"
+            />
+            <div class="TextImage">
+                <h1 id="TextImage1">Librarul tău personal</h1>
+                <h2 id="TextImage2">Îți aducem orice carte din lume</h2>
+                <h2 id="TextImage3">pentru profesia și pasiunile tale!</h2>
+            </div>
+        </section>
+        <section class="BenefitsBar">
+            <ul class="BenefitsBarList">
+                <li class="BenefitsItem">
+                    <svg
+                        version="1.1"
+                        class="Globe"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 60 60"
+                        style="enable-background: new 0 0 60 60"
+                        xml:space="preserve"
+                    >
+                        <title>Globe</title>
+                        <path
+                            d="M30,0C13.5,0,0,13.5,0,30s13.5,30,30,30s30-13.5,30-30S46.5,0,30,0z M54,20h-8.9c-1.1-5.7-3-10.6-5.5-14.2
+	C46.1,8.4,51.3,13.6,54,20z M56,30c0,2.1-0.3,4.1-0.7,6h-9.6c0.2-1.9,0.3-3.9,0.3-6s-0.1-4.1-0.3-6h9.6C55.7,25.9,56,27.9,56,30z
+	 M4,30c0-2.1,0.3-4.1,0.7-6h9.6c-0.2,1.9-0.3,3.9-0.3,6s0.1,4.1,0.3,6H4.7C4.3,34.1,4,32.1,4,30z M18,30c0-2.1,0.1-4.1,0.3-6H28v12
+	h-9.7C18.1,34.1,18,32.1,18,30z M32,4.4c3.8,1.5,7.4,7.2,9.1,15.6H32V4.4z M28,4.4V20h-9.1C20.6,11.6,24.2,5.9,28,4.4z M28,40v15.6
+	c-3.8-1.5-7.4-7.2-9.1-15.6H28z M32,55.6V40h9.1C39.4,48.4,35.8,54.1,32,55.6z M32,36V24h9.7c0.2,1.9,0.3,3.9,0.3,6s-0.1,4.1-0.3,6
+	H32z M20.4,5.8c-2.5,3.5-4.5,8.4-5.5,14.2H6C8.7,13.5,13.9,8.4,20.4,5.8z M6,40h8.9c1.1,5.8,3,10.6,5.5,14.2
+	C13.9,51.6,8.7,46.4,6,40z M39.6,54.2c2.5-3.5,4.5-8.4,5.5-14.2H54C51.3,46.4,46.1,51.6,39.6,54.2z"
+                        />
+                    </svg>
+
+                    <h2 class="BenefitText">
+                        Livrare express de cărți pentru proiecte speciale sau
+                        aniversări
+                    </h2>
+                </li>
+                <li class="BenefitsItem">
+                    <svg
+                        version="1.1"
+                        class="Clock"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 100 100"
+                        style="enable-background: new 0 0 100 100"
+                        xml:space="preserve"
+                    >
+                        <title>Clock</title>
+                        <style type="text/css">
+                            .st0 {
+                                display: none;
+                            }
+                            .st1 {
+                                display: inline;
+                            }
+                            .st2 {
+                                display: inline;
+                                fill: none;
+                                stroke: #ffffff;
+                                stroke-miterlimit: 10;
+                            }
+                            .st3 {
+                                display: inline;
+                                fill: none;
+                            }
+                            .st4 {
+                                display: inline;
+                                stroke: #ffffff;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                        <g class="st0">
+                            <rect
+                                x="-192"
+                                class="st1"
+                                width="185"
+                                height="99"
+                            />
+                            <rect y="-36" class="st1" width="100" height="30" />
+                            <text
+                                transform="matrix(1 0 0 1 66 -19.5)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                http://thenounproject.com
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 7.166 -24.5)"
+                                class="st1"
+                                style="
+                                    font-family: 'ArialMT';
+                                    font-size: 6.1578px;
+                                "
+                            >
+                                The Noun Project
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 8.286 -19.7)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 4px"
+                            >
+                                Icon Template
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -178.5 10.5)"
+                                class="st1"
+                                style="
+                                    font-family: 'ArialMT';
+                                    font-size: 6.1578px;
+                                "
+                            >
+                                Reminders
+                            </text>
+                            <line
+                                class="st2"
+                                x1="8"
+                                y1="-14.5"
+                                x2="18"
+                                y2="-14.5"
+                            />
+                            <line
+                                class="st2"
+                                x1="-179"
+                                y1="16.5"
+                                x2="-162"
+                                y2="16.5"
+                            />
+                            <g class="st1">
+                                <g>
+                                    <g>
+                                        <rect
+                                            x="-170.8"
+                                            y="31.3"
+                                            width="8.7"
+                                            height="8.6"
+                                        />
+                                        <path
+                                            d="M-164.5,42.3h4.7v-4.7h-4.7V42.3z M-159.3,42.7h-5.6v-5.6h5.6V42.7L-159.3,42.7z M-166.2,44.1h8.3v-8.2h-8.3V44.1
+					L-166.2,44.1z M-157.5,44.5h-9.2v-9.1h9.2V44.5L-157.5,44.5z"
+                                        />
+                                        <polygon
+                                            points="-166.1,44.1 -166.3,44 -158,35.8 -157.9,35.9 				"
+                                        />
+                                    </g>
+                                </g>
+                            </g>
+                            <rect
+                                x="-179"
+                                y="58"
+                                class="st3"
+                                width="35"
+                                height="32.5"
+                            />
+                            <text
+                                transform="matrix(1 0 0 1 -179 60.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 3px"
+                            >
+                                Strokes
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -179 65.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                Try to keep strokes at 4px
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -179 70.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                Minimum stroke weight is 2px
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -179 74.6299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                For thicker strokes use even
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -179 77.6299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                numbers: 6px, 8px etc.
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -179 82.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                Remember to expand strokes
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -179 85.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                before saving as an SVG
+                            </text>
+                            <rect
+                                x="-136.5"
+                                y="58"
+                                class="st3"
+                                width="35"
+                                height="32.5"
+                            />
+                            <text
+                                transform="matrix(1 0 0 1 -136.5 60.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 3px"
+                            >
+                                Size
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -136.5 65.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                Cannot be wider or taller than
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -136.5 68.6299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                100px (artboard size)
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -136.5 73.6299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                Scale your icon to fill as much of
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -136.5 76.6299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                the artboard as possible
+                            </text>
+                            <rect
+                                x="-94"
+                                y="58"
+                                class="st3"
+                                width="35"
+                                height="32.5"
+                            />
+                            <text
+                                transform="matrix(1 0 0 1 -94 60.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 3px"
+                            >
+                                Ungroup
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -94 65.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                If your design has more than one
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -94 68.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                shape, make sure to ungroup
+                            </text>
+                            <rect
+                                x="-50"
+                                y="58"
+                                class="st3"
+                                width="35"
+                                height="32.5"
+                            />
+                            <text
+                                transform="matrix(1 0 0 1 -50 60.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 3px"
+                            >
+                                Save as
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -50 65.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                Save as .SVG and make sure “Use
+                            </text>
+                            <text
+                                transform="matrix(1 0 0 1 -50 68.1299)"
+                                class="st1"
+                                style="font-family: 'ArialMT'; font-size: 2.4px"
+                            >
+                                Artboards” is checked
+                            </text>
+                            <text
+                                transform="matrix(1.0074 0 0 1 -125.542 30.5933)"
+                                class="st1"
+                                style="
+                                    font-family: 'ArialMT';
+                                    font-size: 2.5731px;
+                                "
+                            >
+                                100px
+                            </text>
+                            <text
+                                transform="matrix(1.0074 0 0 1 -41 39)"
+                                class="st1"
+                                style="
+                                    font-family: 'ArialMT';
+                                    font-size: 5.1462px;
+                                "
+                            >
+                                .SVG
+                            </text>
+                            <rect
+                                x="-126.5"
+                                y="34.8"
+                                class="st1"
+                                width="10.3"
+                                height="10.2"
+                            />
+                            <rect
+                                x="-126.5"
+                                y="31.8"
+                                class="st1"
+                                width="0.5"
+                                height="2.3"
+                            />
+                            <rect
+                                x="-116.8"
+                                y="31.8"
+                                class="st1"
+                                width="0.5"
+                                height="2.3"
+                            />
+                            <rect
+                                x="-127"
+                                y="32.3"
+                                class="st1"
+                                width="11.2"
+                                height="0.6"
+                            />
+                            <g class="st1">
+                                <rect
+                                    x="-83.8"
+                                    y="33.8"
+                                    width="10.3"
+                                    height="10.2"
+                                />
+                                <rect
+                                    x="-76.8"
+                                    y="28.7"
+                                    width="3.3"
+                                    height="3.3"
+                                />
+                            </g>
+                            <rect
+                                x="-178.5"
+                                y="22.5"
+                                class="st4"
+                                width="30"
+                                height="30"
+                            />
+                            <rect
+                                x="-136.5"
+                                y="22.5"
+                                class="st4"
+                                width="30"
+                                height="30"
+                            />
+                            <rect
+                                x="-93.5"
+                                y="22.5"
+                                class="st4"
+                                width="30"
+                                height="30"
+                            />
+                            <rect
+                                x="-49.5"
+                                y="22.5"
+                                class="st4"
+                                width="30"
+                                height="30"
+                            />
+                        </g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M50,0C22.4,0,0,22.4,0,50s22.4,50,50,50s50-22.4,50-50S77.6,0,50,0z M50,90c-22.1,0-40-17.9-40-40c0-22.1,17.9-40,40-40
+				c22.1,0,40,17.9,40,40C90,72.1,72.1,90,50,90z"
+                                    />
+                                </g>
+                            </g>
+                            <path
+                                d="M54,50c0,3.3-2.2,6-5,6l0,0c-2.8,0-5-2.7-5-6V20c0-3.3,2.2-6,5-6l0,0c2.8,0,5,2.7,5,6V50z"
+                            />
+                            <path
+                                d="M47.1,56.2c-2.8-1.8-3.8-5.2-2.3-7.7l0,0c1.6-2.5,5.1-3.1,7.9-1.3L78.2,63c2.8,1.8,3.8,5.2,2.3,7.7l0,0
+		c-1.6,2.5-5.1,3.1-7.9,1.3L47.1,56.2z"
+                            />
+                        </g>
+                    </svg>
+                    <h2 class="BenefitText">
+                        Cele mai noi cărți sunt disponibile online în librărie
+                        imediat după publicare
+                    </h2>
+                </li>
+                <li class="BenefitsItem">
+                    <svg
+                        version="1.1"
+                        class="Shield"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 26 32"
+                        style="enable-background: new 0 0 26 32"
+                        xml:space="preserve"
+                    >
+                        <title>Shield</title>
+                        <g>
+                            <path
+                                d="M13,32c-0.1,0-0.2,0-0.2,0C6.9,30.5,0,21.8,0,16V3.7c0-0.6,0.4-1,1-1C2.9,2.7,5.6,2,9.2,1c1.1-0.3,2.3-0.6,3.6-1
+		c0.2,0,0.3,0,0.5,0c1.2,0.3,2.3,0.6,3.3,0.9c3.6,1,6.4,1.8,8.4,1.8c0.6,0,1,0.4,1,1V16c0,6-5.7,14.5-12.8,16C13.1,32,13.1,32,13,32
+		z M2,4.7V16c0,4.9,6,12.5,11,14c5.8-1.4,11-8.9,11-14V4.7c-2.1-0.2-4.7-0.9-8-1.8c-1-0.3-2-0.5-3-0.8c-1.2,0.3-2.3,0.6-3.3,0.9
+		C6.6,3.8,4,4.5,2,4.7z"
+                            />
+                            <path
+                                d="M12,21c-0.3,0-0.5-0.1-0.7-0.3l-4-4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l3.2,3.2l6.3-7.2c0.4-0.4,1-0.5,1.4-0.1
+		c0.4,0.4,0.5,1,0.1,1.4l-7,8C12.6,20.9,12.3,21,12,21C12,21,12,21,12,21z"
+                            />
+                        </g>
+                    </svg>
+
+                    <h2 class="BenefitText">
+                        Cumperi cărți în siguranță, cu drept de retur gratuit
+                    </h2>
+                </li>
+                <li class="BenefitsItem">
+                    <svg
+                        version="1.1"
+                        class="Piggy"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 80.3 58.2"
+                        style="enable-background: new 0 0 80.3 58.2"
+                        xml:space="preserve"
+                    >
+                        <title>Piggy</title>
+                        <path
+                            d="M80.2,7.7c-0.1-0.4-0.6-0.7-1-0.5l0,0c-0.2,0.1-0.3,0.4-0.3,0.6c0.3,1.9-1,4.2-3.2,5.4c-0.4,0.2-0.8,0.4-1.2,0.6
+	c0-0.5-0.1-1-0.2-1.5s-0.4-1-0.6-1.5c-0.3-0.5-0.6-1-1-1.4c-1.5-1.5-3.7-1.7-5-0.5c-0.6,0.6-0.9,1.5-0.8,2.3
+	c0.1,0.9,0.5,1.8,1.1,2.5c0.7,0.7,1.6,1.2,2.5,1.5c0.8,0.2,1.6,0.3,2.4,0.2c-0.2,0.7-0.5,1.3-0.8,1.9c-1,1.6-2.5,2.6-4,2.9
+	C63.9,10,51.9,2.7,37.8,2.7c-4.7,0-9.2,0.8-13.3,2.3c-0.4-0.6-0.9-1.3-1.4-1.8C20.2,0.3,11.5,0,11.5,0s0.2,7.7,2.7,11
+	c-3.8,3.3-6.5,7.4-7.7,12.1H4.1c-2.3,0-4.1,1.8-4.1,4.1v7c0,2.3,1.8,4.2,4.1,4.2h4.4c1.3,2.4,3,4.5,5,6.4l-1,2.7
+	c-1.2,3.3,0.5,6.9,3.8,8.1l6,2.2c3.3,1.2,6.9-0.5,8.1-3.8l0.3-1c2.2,0.4,4.5,0.6,6.9,0.6c2.8,0,5.5-0.3,8.1-0.8l0.4,1.2
+	c1.2,3.3,4.8,5,8.1,3.8l6-2.2c3.3-1.2,5-4.8,3.8-8.1l-1.3-3.6c4.2-4.3,6.7-9.8,6.7-15.7c0-2.4-0.4-4.6-1.1-6.8
+	c1.8-0.4,3.5-1.6,4.6-3.5C73.5,17,73.8,16,74,15c0.7-0.2,1.3-0.5,2-0.8C79.1,12.8,80.6,10.1,80.2,7.7z M17.1,23.9
+	c-1.4,0-2.5-1.7-2.5-3.8s1.1-3.8,2.5-3.8s2.5,1.7,2.5,3.8S18.5,23.9,17.1,23.9z M50.9,14.7c-3.8-1.9-8.2-2.9-12.9-2.9
+	c-1.7,0-3.4,0.1-5,0.4c-1.5,0.2-3-1-3-2.5l0,0c0-1.2,0.9-2.3,2.2-2.5C34.1,6.9,36,6.7,38,6.7c5.5,0,10.7,1.2,15.2,3.4
+	c0.9,0.4,1.4,1.3,1.4,2.3C54.6,14.3,52.6,15.6,50.9,14.7z M73.3,14.2c-0.8,0.1-1.6,0.1-2.3-0.1c-0.3-0.1-0.6-0.2-0.9-0.4
+	c-0.5-0.3-1-0.6-1.3-1.1c-0.2-0.3-0.4-0.8-0.5-1.3s0.1-1,0.4-1.4c0.6-0.6,1.6-0.5,2.4-0.1c0.5,0.3,1,0.7,1.3,1.2s0.6,1,0.7,1.5
+	C73.3,13.1,73.3,13.6,73.3,14.2z"
+                        />
+                    </svg>
+
+                    <h2 class="BenefitText">
+                        Prețuri economice și plata în rate atunci când bugetul
+                        este important
+                    </h2>
+                </li>
+            </ul>
+        </section>
+        <section class="Selection">
+            <div class="SelectionUpper">
+                <h2 class="SelectionTitle">Cele mai dorite produse</h2>
+                <a href=""
+                    ><h3 class="SelectionSubTitle">Vezi întreaga listă</h3></a
+                >
+            </div>
+            <ul class="SelectionList">
+                <li class="SelectionItem First" id="first-book">
+                    <a href="">
+                        <img
+                            src="https://i1.books-express.ro/bf/9780062457714/the-subtle-art-of-not-giving-a-f-ck.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">
+                                    Preț: <strong>82<sup>88</sup></strong> lei
+                                </p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9780349411903/deep-work.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9780141043029/outliers.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9781544512273/can-t-hurt-me.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9780470627600/the-10x-rule-the-only-difference-between-success-and-failure.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9781939438256/think-and-grow-rich.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i1.books-express.ro/bt/9781781250914/mastery.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i4.books-express.ro/bt/9780743409391/unlimited-power.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i4.books-express.ro/bt/9780385491747/the-80-20-principle.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9780091816971/who-moved-my-cheese.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i3.books-express.ro/bt/9780091935580/the-chimp-paradox.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem First" id="first-book">
+                    <a href="">
+                        <img
+                            src="https://i1.books-express.ro/bf/9780062457714/the-subtle-art-of-not-giving-a-f-ck.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">
+                                    Preț: <strong>82<sup>88</sup></strong> lei
+                                </p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9780349411903/deep-work.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9780141043029/outliers.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9781544512273/can-t-hurt-me.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9780470627600/the-10x-rule-the-only-difference-between-success-and-failure.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9781939438256/think-and-grow-rich.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i1.books-express.ro/bt/9781781250914/mastery.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i4.books-express.ro/bt/9780743409391/unlimited-power.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i4.books-express.ro/bt/9780385491747/the-80-20-principle.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9780091816971/who-moved-my-cheese.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i3.books-express.ro/bt/9780091935580/the-chimp-paradox.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem First" id="first-book">
+                    <a href="">
+                        <img
+                            src="https://i1.books-express.ro/bf/9780062457714/the-subtle-art-of-not-giving-a-f-ck.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">
+                                    Preț: <strong>82<sup>88</sup></strong> lei
+                                </p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9780349411903/deep-work.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9780141043029/outliers.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9781544512273/can-t-hurt-me.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9780470627600/the-10x-rule-the-only-difference-between-success-and-failure.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9781939438256/think-and-grow-rich.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i1.books-express.ro/bt/9781781250914/mastery.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i4.books-express.ro/bt/9780743409391/unlimited-power.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i4.books-express.ro/bt/9780385491747/the-80-20-principle.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9780091816971/who-moved-my-cheese.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i3.books-express.ro/bt/9780091935580/the-chimp-paradox.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem First" id="first-book">
+                    <a href="">
+                        <img
+                            src="https://i1.books-express.ro/bf/9780062457714/the-subtle-art-of-not-giving-a-f-ck.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">
+                                    Preț: <strong>82<sup>88</sup></strong> lei
+                                </p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9780349411903/deep-work.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9780141043029/outliers.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9781544512273/can-t-hurt-me.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9780470627600/the-10x-rule-the-only-difference-between-success-and-failure.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i0.books-express.ro/bt/9781939438256/think-and-grow-rich.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i1.books-express.ro/bt/9781781250914/mastery.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i4.books-express.ro/bt/9780743409391/unlimited-power.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i4.books-express.ro/bt/9780385491747/the-80-20-principle.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i2.books-express.ro/bt/9780091816971/who-moved-my-cheese.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="SelectionItem">
+                    <a href="">
+                        <img
+                            src="https://i3.books-express.ro/bt/9780091935580/the-chimp-paradox.jpg"
+                            alt=""
+                            class="SelectionImage"
+                        />
+                        <h3 class="BookTitle">
+                            The Subtle Art of Not Giving a F*ck: A
+                            Counterintuitive Approach to Living a Good Life
+                        </h3>
+                    </a>
+                    <h3 class="BookAuthor">Mark Manson</h3>
+                    <div class="SubHeading">
+                        <h3 class="DiscountLabelText"><span>-30%</span></h3>
+
+                        <div class="PriceSection">
+                            <div class="UpperPrice">
+                                <p class="Price">Preț: 82<sup>88</sup> lei</p>
+                            </div>
+                            <h3 class="DiscountedPrice">
+                                118<sup>40</sup> lei
+                            </h3>
+                        </div>
+                    </div>
+                </li>
+                <a href="" class="Angle Left" id="left">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-left"
+                        class="svg-inline--fa fa-angle-left fa-w-8"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                    >
+                        <path
+                            style="fill:black"
+                            d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+                        ></path>
+                    </svg>
+                </a>
+                <a href="" class="Angle Right" id="right">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-left"
+                        class="svg-inline--fa fa-angle-left fa-w-8"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                    >
+                        <path
+                        style="fill:black"
+                            d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+                        ></path>
+                    </svg>
+                </a>
+            </ul>
+        </section>
+        
+        <a href="" class="BackToTop" id="back-to-top">
+            <svg
+                focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                x="0px"
+                y="0px"
+                viewBox="0 0 496 496"
+                xml:space="preserve"
+            >
+                <path
+                    class="ArrowPath"
+                    fill="rgba(121, 121, 121, 0.7);"
+                    d="M0,248C0,111,111,0,248,0s248,111,248,248S385,496,248,496S0,385,0,248z M128,280.9l83.3-86.8v210
+     c0,15.3,12.3,27.6,27.6,27.6h18.4c15.3,0,27.6-12.3,27.6-27.6v-210l83.3,86.8c10.7,11.2,28.5,11.4,39.4,0.5l12.5-12.6
+     c10.8-10.8,10.8-28.3,0-39L267.6,77.1c-10.8-10.8-28.3-10.8-39,0L75.9,229.7c-10.8,10.8-10.8,28.3,0,39l12.5,12.6
+     C99.4,292.3,117.3,292,128,280.9z"
+                />
+            </svg>
+        </a>
+    </body>
+    <footer class="Footer">
+        <section class="FooterGrid">
+            <div class="FooterSection">
+                <div class="Livrare">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="truck"
+                        class="svg-inline--fa fa-truck fa-w-20"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"
+                        ></path>
+                    </svg>
+                    <h2>Livrare gratuită</h2>
+                </div>
+                <h3>
+                    La comenzi începând cu 300 lei, prin Fan Courier sau GLS
+                    oriunde în România.
+                </h3>
+                <div class="Comenzi">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="far"
+                        data-icon="credit-card"
+                        class="svg-inline--fa fa-credit-card fa-w-18"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
+                        ></path>
+                    </svg>
+                    <h2>Cumperi în siguranță</h2>
+                </div>
+                <h3>
+                    Plata la primirea coletului, sau poți plăti în rate fără
+                    dobândă.
+                </h3>
+                <div class="Bank">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="cc-visa"
+                        class="svg-inline--fa fa-cc-visa fa-w-18"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2.3 3.3-9.1 5.3-14.9l2.8 13.4zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM152.5 331.2L215.7 176h-42.5l-39.3 106-4.3-21.5-14-71.4c-2.3-9.9-9.4-12.7-18.2-13.1H32.7l-.7 3.1c15.8 4 29.9 9.8 42.2 17.1l35.8 135h42.5zm94.4.2L272.1 176h-40.2l-25.1 155.4h40.1zm139.9-50.8c.2-17.7-10.6-31.2-33.7-42.3-14.1-7.1-22.7-11.9-22.7-19.2.2-6.6 7.3-13.4 23.1-13.4 13.1-.3 22.7 2.8 29.9 5.9l3.6 1.7 5.5-33.6c-7.9-3.1-20.5-6.6-36-6.6-39.7 0-67.6 21.2-67.8 51.4-.3 22.3 20 34.7 35.2 42.2 15.5 7.6 20.8 12.6 20.8 19.3-.2 10.4-12.6 15.2-24.1 15.2-16 0-24.6-2.5-37.7-8.3l-5.3-2.5-5.6 34.9c9.4 4.3 26.8 8.1 44.8 8.3 42.2.1 69.7-20.8 70-53zM528 331.4L495.6 176h-31.1c-9.6 0-16.9 2.8-21 12.9l-59.7 142.5H426s6.9-19.2 8.4-23.3H486c1.2 5.5 4.8 23.3 4.8 23.3H528z"
+                        ></path>
+                    </svg>
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="cc-mastercard"
+                        class="svg-inline--fa fa-cc-mastercard fa-w-18"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M482.9 410.3c0 6.8-4.6 11.7-11.2 11.7-6.8 0-11.2-5.2-11.2-11.7 0-6.5 4.4-11.7 11.2-11.7 6.6 0 11.2 5.2 11.2 11.7zm-310.8-11.7c-7.1 0-11.2 5.2-11.2 11.7 0 6.5 4.1 11.7 11.2 11.7 6.5 0 10.9-4.9 10.9-11.7-.1-6.5-4.4-11.7-10.9-11.7zm117.5-.3c-5.4 0-8.7 3.5-9.5 8.7h19.1c-.9-5.7-4.4-8.7-9.6-8.7zm107.8.3c-6.8 0-10.9 5.2-10.9 11.7 0 6.5 4.1 11.7 10.9 11.7 6.8 0 11.2-4.9 11.2-11.7 0-6.5-4.4-11.7-11.2-11.7zm105.9 26.1c0 .3.3.5.3 1.1 0 .3-.3.5-.3 1.1-.3.3-.3.5-.5.8-.3.3-.5.5-1.1.5-.3.3-.5.3-1.1.3-.3 0-.5 0-1.1-.3-.3 0-.5-.3-.8-.5-.3-.3-.5-.5-.5-.8-.3-.5-.3-.8-.3-1.1 0-.5 0-.8.3-1.1 0-.5.3-.8.5-1.1.3-.3.5-.3.8-.5.5-.3.8-.3 1.1-.3.5 0 .8 0 1.1.3.5.3.8.3 1.1.5s.2.6.5 1.1zm-2.2 1.4c.5 0 .5-.3.8-.3.3-.3.3-.5.3-.8 0-.3 0-.5-.3-.8-.3 0-.5-.3-1.1-.3h-1.6v3.5h.8V426h.3l1.1 1.4h.8l-1.1-1.3zM576 81v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V81c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM64 220.6c0 76.5 62.1 138.5 138.5 138.5 27.2 0 53.9-8.2 76.5-23.1-72.9-59.3-72.4-171.2 0-230.5-22.6-15-49.3-23.1-76.5-23.1-76.4-.1-138.5 62-138.5 138.2zm224 108.8c70.5-55 70.2-162.2 0-217.5-70.2 55.3-70.5 162.6 0 217.5zm-142.3 76.3c0-8.7-5.7-14.4-14.7-14.7-4.6 0-9.5 1.4-12.8 6.5-2.4-4.1-6.5-6.5-12.2-6.5-3.8 0-7.6 1.4-10.6 5.4V392h-8.2v36.7h8.2c0-18.9-2.5-30.2 9-30.2 10.2 0 8.2 10.2 8.2 30.2h7.9c0-18.3-2.5-30.2 9-30.2 10.2 0 8.2 10 8.2 30.2h8.2v-23zm44.9-13.7h-7.9v4.4c-2.7-3.3-6.5-5.4-11.7-5.4-10.3 0-18.2 8.2-18.2 19.3 0 11.2 7.9 19.3 18.2 19.3 5.2 0 9-1.9 11.7-5.4v4.6h7.9V392zm40.5 25.6c0-15-22.9-8.2-22.9-15.2 0-5.7 11.9-4.8 18.5-1.1l3.3-6.5c-9.4-6.1-30.2-6-30.2 8.2 0 14.3 22.9 8.3 22.9 15 0 6.3-13.5 5.8-20.7.8l-3.5 6.3c11.2 7.6 32.6 6 32.6-7.5zm35.4 9.3l-2.2-6.8c-3.8 2.1-12.2 4.4-12.2-4.1v-16.6h13.1V392h-13.1v-11.2h-8.2V392h-7.6v7.3h7.6V416c0 17.6 17.3 14.4 22.6 10.9zm13.3-13.4h27.5c0-16.2-7.4-22.6-17.4-22.6-10.6 0-18.2 7.9-18.2 19.3 0 20.5 22.6 23.9 33.8 14.2l-3.8-6c-7.8 6.4-19.6 5.8-21.9-4.9zm59.1-21.5c-4.6-2-11.6-1.8-15.2 4.4V392h-8.2v36.7h8.2V408c0-11.6 9.5-10.1 12.8-8.4l2.4-7.6zm10.6 18.3c0-11.4 11.6-15.1 20.7-8.4l3.8-6.5c-11.6-9.1-32.7-4.1-32.7 15 0 19.8 22.4 23.8 32.7 15l-3.8-6.5c-9.2 6.5-20.7 2.6-20.7-8.6zm66.7-18.3H408v4.4c-8.3-11-29.9-4.8-29.9 13.9 0 19.2 22.4 24.7 29.9 13.9v4.6h8.2V392zm33.7 0c-2.4-1.2-11-2.9-15.2 4.4V392h-7.9v36.7h7.9V408c0-11 9-10.3 12.8-8.4l2.4-7.6zm40.3-14.9h-7.9v19.3c-8.2-10.9-29.9-5.1-29.9 13.9 0 19.4 22.5 24.6 29.9 13.9v4.6h7.9v-51.7zm7.6-75.1v4.6h.8V302h1.9v-.8h-4.6v.8h1.9zm6.6 123.8c0-.5 0-1.1-.3-1.6-.3-.3-.5-.8-.8-1.1-.3-.3-.8-.5-1.1-.8-.5 0-1.1-.3-1.6-.3-.3 0-.8.3-1.4.3-.5.3-.8.5-1.1.8-.5.3-.8.8-.8 1.1-.3.5-.3 1.1-.3 1.6 0 .3 0 .8.3 1.4 0 .3.3.8.8 1.1.3.3.5.5 1.1.8.5.3 1.1.3 1.4.3.5 0 1.1 0 1.6-.3.3-.3.8-.5 1.1-.8.3-.3.5-.8.8-1.1.3-.6.3-1.1.3-1.4zm3.2-124.7h-1.4l-1.6 3.5-1.6-3.5h-1.4v5.4h.8v-4.1l1.6 3.5h1.1l1.4-3.5v4.1h1.1v-5.4zm4.4-80.5c0-76.2-62.1-138.3-138.5-138.3-27.2 0-53.9 8.2-76.5 23.1 72.1 59.3 73.2 171.5 0 230.5 22.6 15 49.5 23.1 76.5 23.1 76.4.1 138.5-61.9 138.5-138.4z"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="FooterSection">
+                <div class="Contact">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="far"
+                        data-icon="envelope"
+                        class="svg-inline--fa fa-envelope fa-w-16"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+                        ></path>
+                    </svg>
+                    <h2>Contact</h2>
+                </div>
+                <a href="/contact"
+                    ><p class="Date">vezi toate datele de contact</p></a
+                >
+                <a href="contact@books-express.ro"
+                    ><p class="ContactLink">contact@books-express.ro</p></a
+                >
+                <div class="Telefoane">
+                    <div class="TelefoaneInfo">
+                        <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="phone-alt"
+                            class="svg-inline--fa fa-phone-alt fa-w-16"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+                            ></path>
+                        </svg>
+                        <p class="TelefoaneText">Telefoane:</p>
+                    </div>
+                    <a class="PhoneNumber" href="tel:021 569.72.76">021 569.72.76</a>
+                    <a class="PhoneNumber" href="tel:0735 531.939">0735 531.939</a>
+                    <a class="PhoneNumber" href="tel:0744 325.215">0744 325.215</a>
+                </div>
+                <h3>
+                    Str. Grădiștea Floreștilor nr. 17 <br />
+                    București, sector 2
+                </h3>
+            </div>
+
+            <div class="FooterSection FS3">
+                <div class="Asistență">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="life-ring" class="svg-inline--fa fa-life-ring fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 504c136.967 0 248-111.033 248-248S392.967 8 256 8 8 119.033 8 256s111.033 248 248 248zm-103.398-76.72l53.411-53.411c31.806 13.506 68.128 13.522 99.974 0l53.411 53.411c-63.217 38.319-143.579 38.319-206.796 0zM336 256c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zm91.28 103.398l-53.411-53.411c13.505-31.806 13.522-68.128 0-99.974l53.411-53.411c38.319 63.217 38.319 143.579 0 206.796zM359.397 84.72l-53.411 53.411c-31.806-13.505-68.128-13.522-99.973 0L152.602 84.72c63.217-38.319 143.579-38.319 206.795 0zM84.72 152.602l53.411 53.411c-13.506 31.806-13.522 68.128 0 99.974L84.72 359.398c-38.319-63.217-38.319-143.579 0-206.796z"></path></svg>
+                    <h2>Asistență clienți</h2>
+                </div>
+                <a href="">Cum cumpăr?</a>
+                <a href="">Despre Books Express </a>
+                <a href="">Părerile clienților</a>
+                <a href="">Întrebări frecvente</a>
+                <a href="">Politica de confidențialitate</a>
+                <a href="">Termeni și condiții</a>
+                <a href="">ANPC</a>
+                <a href="">Soluționarea litigiilor</a>
+                <a href="">Despre cookies</a>
+                <a href="">Preferințe cookies</a>
+            </div>
+            <div class="FooterSection Last">
+                <div class="Newsletter">
+                    <div class="NewsletterTitle">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>
+                        <h2>Newsletter</h2>
+                    </div>
+                    <form class="NewsletterForm">
+                        <input
+                            class="NewsletterInput"
+                            type="text"
+                            placeholder="Email"
+                        />
+                        <button class="NewsletterButton" type="submit">
+                            <p class="NewsletterButtonText">Mă abonez</p>
+                        </button>
+                    </form>
+                </div>
+                <div class="Social">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram-square" class="svg-inline--fa fa-instagram-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"></path></svg>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter-square" class="LastSocial" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path></svg>
+                    
+                    <a href="">Blog</a>
+                </div>
+                <div class="Premii">
+                    <a href="">Premii</a>
+                    <h3>•</h3>
+                    <a href="">Cărți dorite</a>
+                </div>
+                <a href="" class="DarkMode" id="dark-mode"
+                    >Join the dark side</a
+                >
+            </div>
+        </section>
+        <section class="Legal">
+            <h3 class="LegalText">
+                Toate drepturile rezervate 2004-2021 IST Ultra SRL, CUI
+                16813298, Reg. Com. J40/15818/2004
+            </h3>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</html>

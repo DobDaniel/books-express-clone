@@ -1,0 +1,554 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+.main {
+    font-family: "WorkSans";
+    font-weight: 400;
+    color: #444;
+    font-size: 1.125rem;
+    overflow-x: hidden;
+}
+.HeaderLogoImage path {
+    fill: var(--logocolor);
+}
+.Header {
+    background-color: var(--headercolor);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+.NavList {
+    display: flex;
+    flex-direction: row;
+}
+.NavListItem {
+    display: flex;
+    margin-left: 0.25rem;
+    align-items: center;
+    flex-direction: row;
+}
+.NavListItem h3 {
+    margin-left: 0.25rem;
+}
+.NavListItemImage {
+    display: flex;
+    margin-left: 0.25rem;
+    align-items: center;
+    width: 15px;
+    height: auto;
+}
+.Person {
+    width: 10px;
+    height: auto;
+}
+
+.HeaderLogoImage {
+    display: flex;
+    width: 220px;
+    height: auto;
+}
+
+.Search {
+    display: flex;
+    margin-left: 1rem;
+    width: 100%;
+}
+.SearchBar {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: var(--bordervar);
+}
+.SearchBar::placeholder {
+    font-family: "WorkSans";
+    font-weight: 500;
+    color: #c7c7c7;
+}
+.Nav {
+    margin-left: 0.5rem;
+}
+.SearchButton {
+    display: flex;
+    align-items: center;
+    background-color: #dc6f20;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.SearchIcon {
+    fill: white;
+    width: 1rem;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.NavLink:hover {
+    color: #dc6f20;
+    fill: #dc6f20;
+}
+.UnderBar {
+    width: 100%;
+    background-color: #495296;
+    color: white;
+}
+.UnderBarList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem 0.25rem;
+    align-items: center;
+}
+.UnderBarItem {
+    margin-left: 0.75rem;
+}
+.UnderBarItem:hover {
+    text-decoration: underline;
+}
+.Separate {
+    flex: 1;
+}
+.Separated {
+    padding-right: 0.25rem;
+}
+.DropItem {
+    margin-left: 0rem;
+    display: flex;
+    fill: white;
+    font-weight: bold;
+}
+.DropItem svg polygon {
+    stroke: white;
+    stroke-width: 3;
+}
+.IconItem {
+    display: flex;
+    fill: white;
+}
+.UnderBarIcon {
+    margin-right: 0.5rem;
+    width: 15px;
+    height: auto;
+}
+.HeaderSection {
+    position: relative;
+}
+.TextImage h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+.TextImage h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+.TextImage {
+    position: absolute;
+    top: 0;
+    left: 20rem;
+    right: 0;
+    bottom: 0;
+}
+.BenefitsBar {
+    background-color: var(--benefitscolor);
+    padding: 0;
+    border-top: var(--bordervar);
+    border-bottom: var(--bordervar);
+}
+.BenefitsBarList {
+    display: flex;
+
+    margin-left: 20rem;
+    padding-bottom: 0.75rem;
+}
+.BenefitsItem {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+.Piggy,
+.Shield,
+.Clock,
+.Globe {
+    margin-right: 0.25rem;
+    fill: #444;
+    width: 70px;
+    height: 70px;
+}
+.Shield {
+    width: 60px;
+    height: 50px;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+/* white-space:pre;
+overflow:hidden;
+text-overflow: ellipsis; */
+
+.Selection {
+    padding-left: 1rem;
+    padding-top: 2rem;
+    background-color: var(--mainsectioncolor);
+}
+.SelectionList {
+    display: flex;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.SelectionItem {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-bottom: var(--bordervar);
+    border-right: var(--bordervar);
+}
+.First {
+    padding-left: 0;
+}
+.SelectionImage {
+    width: 150px;
+    height: 225px;
+}
+.SelectionUpper {
+    margin-bottom: 1rem;
+}
+.SelectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.SelectionSubTitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #5aa6ed;
+}
+.SelectionSubTitle:hover {
+    color: #dc6f20;
+}
+.BookTitle {
+    font-size: 0.75rem;
+    color: #5aa6ed;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.BookAuthor {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-top: 0.25rem;
+}
+
+.SubHeading {
+    display: flex;
+    align-items: flex-start;
+}
+.DiscountLabelText {
+    color: white;
+    font-weight: 700;
+    font-size: 0.75rem;
+    background-color: rgba(180, 49, 0, 0.6);
+    border: var(--bordervar);
+    padding: 0.125rem;
+    margin-top: 0.25rem;
+    border-radius: 0.25rem;
+}
+.PriceSection {
+    margin-left: auto;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+.UpperPrice {
+    display: flex;
+    align-items: center;
+}
+.Price {
+    font-weight: 300;
+}
+.DiscountedPrice {
+    margin-top: 0.25rem;
+    margin-left: auto;
+    text-decoration: line-through;
+}
+strong {
+    color: #b43100;
+    font-weight: 700;
+}
+
+.Angle {
+    position: absolute;
+    top: 25%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem 0.125rem;
+    border: var(--bordervar);
+}
+.Angle svg {
+    width: 40px;
+    height: 40px;
+}
+
+.Left {
+    left: 0%;
+}
+.Right {
+    transform: rotate(180deg);
+    right: 0%;
+}
+.BackToTop {
+    width: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+    height: 50px;
+}
+.BackToTop svg {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 1rem;
+    left: 90%;
+}
+.ArrowPath {
+    transition: fill 1s ease;
+    fill: rgba(121, 121, 121, 0.7);
+}
+.BackToTop:hover .ArrowPath {
+    fill: rgba(255, 151, 90, 0.7);
+}
+
+#a:hover ~ #b {
+    background: #ccc;
+}
+.Footer {
+    background-color: var(--footercolor);
+}
+.FooterGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    border-top: var(--bordervar);
+    border-bottom: var(--bordervar);
+}
+.FooterSection {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 1rem 0;
+    padding: 0rem 1rem;
+    border-right: var(--bordervar);
+}
+.Date {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(180, 49, 0, 0.6);
+    margin-bottom: 0.5rem;
+}
+.FooterSection h2 {
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+.FooterSection h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.FooterSection a {
+    transition: color 0.5s ease;
+    color: #5aa6ed;
+}
+.FooterSection a:hover {
+    color: #dc6f20;
+}
+.Last {
+    border-right: none;
+}
+
+.Livrare,
+.Comenzi,
+.Contact,
+.Asistență,
+.NewsletterTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+.FS3 a {
+    margin-bottom: 0.5rem;
+}
+.NewsletterForm {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom: var(--bordervar);
+}
+.NewsletterInput {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: var(--bordervar);
+    border-radius: 2px;
+}
+.NewsletterInput::placeholder {
+    font-family: "WorkSans";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #c7c7c7;
+}
+.NewsletterButton {
+    margin-top: 0.5rem;
+    display: inline-block;
+    background-color: white;
+    align-self: center;
+    border: var(--bordervar);
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 1rem;
+}
+.NewsletterButtonText {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #555;
+    padding: 0.75rem 1rem;
+}
+.Social {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    border-bottom: var(--bordervar);
+}
+.Premii {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: var(--bordervar);
+}
+.Premii h3 {
+    margin: 0 0.5rem;
+}
+#dark-mode {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #909090;
+    transition: color 0.5s ease;
+    align-self: flex-end;
+}
+#dark-mode:hover {
+    color: black;
+}
+.Legal {
+    background-color: var(--footercolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LegalText {
+    font-size: 1rem;
+    color: #c7c7c7;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.FooterSection svg {
+    width: 25px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+.TelefoaneInfo {
+    display: flex;
+}
+.TelefoaneInfo svg {
+    width: 15px;
+}
+.TelefoaneText {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.Telefoane {
+    display: grid;
+    grid-template-columns: 8rem 8rem;
+    grid-row: auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.PhoneNumber {
+    font-size: 1rem;
+}
+.Contact {
+    margin-bottom: 0.375rem;
+}
+.ContactLink {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.Social {
+    padding-bottom: 1rem;
+}
+.Social a {
+    margin-left: auto;
+}
+path {
+    fill: var(--svgfill);
+}
+circle {
+    fill: var(--svgfill);
+}
+polygon {
+    fill: var(--svgfill);
+}
+#dark-mode{
+    color: var(--logocolor);
+}
+#dark-mode:hover{
+    color: #dc6f20;
+}
+h1:not(#TextImage1),
+h2:not(#TextImage2, #TextImage3),
+h3,
+p {
+    color: var(--textcolor);
+}
+
+
+:root {
+    --svgfill: inherit;
+    --textcolor: inherit;
+    --footercolor: #f6f6f6;
+    --mainsectioncolor: white;
+    --benefitscolor: #ededed;
+    --headercolor: white;
+    --logocolor: #162b75;
+    --data-theme: "light";
+    --bordervar: 1px solid #c7c7c7;
+}
+[data-theme="dark"] {
+    --svgfill: #c7c7c7;
+    --textcolor: white;
+    --footercolor: black;
+    --mainsectioncolor: #1d2129;
+    --benefitscolor: #1b1f26;
+    --headercolor: #1d2129;
+    --logocolor: white;
+    --bordervar: 1px solid #555;
+}
